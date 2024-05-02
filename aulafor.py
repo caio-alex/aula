@@ -60,9 +60,55 @@ for i in range(11):
     print(f'{valor}X{i} = {tabuada}')
 '''
 #ex5 qtd de vogais numa string digitada
-vogais = 0
+'''vogais = 0
 palavra = input("digite algo: ")
 for i in palavra:
     if i == 'a' or i == 'e' or i == 'i' or i == 'o' or i == 'u':
         vogais += 1
-print(f'vogais {vogais}')
+print(f'vogais {vogais} e {len(palavra)-vogais} consoantes')
+'''
+
+lista = [1, True, 3.2, 'danilo', ['asd',False]]
+'''print(lista[1])
+print(lista[4][0])
+lista[4] = 'abc'
+print(lista)
+'''
+'''lista[4] = 77
+for i in range(5):
+    print(lista[i])
+'''
+'''for elementos in lista:
+    elementos = 1
+    print(elementos)
+print(lista)'''
+
+'''for i in range(len(lista)):
+    lista[i] = 1
+print(lista)
+'''
+
+#ex6
+'''profs = ['Andre', 'Lucas Silva', 'Yan', 'Allen',  'Fabio', 'Celso']
+achou = False
+for i in range(len(profs)):
+    if profs[i] == 'Danilo':
+        achou = True
+        print(f'{profs[i]} está no índice {i}')
+        break
+if not achou:
+    print("Não está aqui")'''
+'''
+profs = ['Andre', 'Lucas Silva', 'Yan', 'Allen',  'Fabio', 'Celso']
+materia = ['Storytelling', 'Front-end', 'Edge', 'Software Experience', 'nada', 'Matemática']
+achou = False
+for i in range(len(profs)):
+    print(f'{profs[i]} - {materia[i]}')
+'''
+#achar os profs em comum
+profsA = ['Andre', 'Lucas Silva', 'Yan', 'Allen',  'Rita', 'Celso']
+profsB = ['Romeu', 'Célia', 'Rita', 'Alexandre',  'Alex']
+for profsA in profsB:
+    for profsB in profsA:
+        if profsA == profsB:
+            print(f'{profsA} dá nas duas turmas, la ele')
